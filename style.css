@@ -240,7 +240,57 @@ body{
 /* 常見問題 */
 .proMain{
     padding-top: 120px;
+    height: 90vh;
 }
+
+
+/* 店面資訊 */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* 自動調整欄位數 */
+  gap: 30px; /* 適度間距 */
+  padding: 100px 20px; /* 上下左右留白 */
+  justify-items: center; /* 每個格子置中 */
+}
+
+.cell {
+  display: flex;
+  flex-direction: column;
+  align-items: center;     /* 水平置中 */
+  justify-content: flex-start; /* 內容由上往下排 */
+  border: 2px solid #333;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #f9f9f9;
+  text-align: center;
+  box-shadow: 2px 2px 6px rgba(0,0,0,0.2);
+  max-width: 300px; /* 卡片最大寬度 */
+}
+
+.cell img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+
+.cell p {
+  margin: 5px 0;
+  font-size: 16px;
+}
+
+.cell p.subtitle {
+  color: #555;
+  font-size: 14px;
+}
+
+.cell p.title {
+  color: #B22222; /* 店名用深紅色，呼應品牌 */
+  font-weight: bold;
+  font-size: 18px;
+}
+
+
 
 
 /*以下為響應式設計*/
@@ -253,6 +303,14 @@ body{
     position: relative;
 }
 
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+main{
+    flex:1;
+}
 h1 {
     position: static;
     text-align: center;
@@ -315,12 +373,9 @@ footer {
 .about{
     flex-direction: column;
 }
-.main2{
-    height:auto;
 
-}
 /*aboutus*/
-body {
+body, .store_main {
   overflow-x: hidden; /* 禁止水平捲動 */
 }
 
@@ -334,7 +389,14 @@ body {
 
 .main2{
     flex-direction: column;
-    
+    height: auto;
 }
+
+/*常見問題*/
+.proMain{
+    height: auto;
+    padding: 30px;
+}
+
 }
 
