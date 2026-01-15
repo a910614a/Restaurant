@@ -15,19 +15,26 @@
     <header>
         <h1><strong>梅江韓國銅盤烤肉</strong></h1>
         <nav>
-            <ul>
-                <li><a href="index.html">首頁</a></li>
-                <li><a href="aboutus.html">關於我們</a></li>
-                <li><a href="problem.html">常見問題</a></li>
-                <li><a href="store.html">門市據點</a></li>
-                <li class="dropdown">
-                    <span class="dropdown-toggle" data-bs-toggle="dropdown">聯絡我們</span>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="https://www.facebook.com/share/16vYuS8qn1/?mibextid=wwXIfr">Facebook</a></li>
-                      <li><a class="dropdown-item" href="https://www.instagram.com/koreabbq_meijiang?igsh=dmNldzNncWIyaHV0">Instagram</a></li>
-                    </ul>
-                </li>
-            </ul>
+            <div class="navbar">
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="index.html">首頁</a></li>
+                    <li><a href="aboutus.html">關於我們</a></li>
+                    <li><a href="problem.html">常見問題</a></li>
+                    <li><a href="store.html">門市據點</a></li>
+                    <li class="dropdown">
+                        <span class="dropdown-toggle" data-bs-toggle="dropdown">聯絡我們</span>
+                        <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="https://www.facebook.com/share/16vYuS8qn1/?mibextid=wwXIfr">Facebook</a></li>
+                        <li><a class="dropdown-item" href="https://www.instagram.com/koreabbq_meijiang?igsh=dmNldzNncWIyaHV0">Instagram</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
         </nav>
     </header>
     <main class="proMain container vh-100">
@@ -79,13 +86,13 @@
             </div>
 
             <div class="accordion-item">
-                <h2 class="accordion-header" id="headingThree">
+                <h2 class="accordion-header" id="headingFour">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#faq3" data-bs-parent="#faqAccordion">
+                        data-bs-target="#faq4" data-bs-parent="#faqAccordion">
                         餐廳附近是否有停車場或特約停車位？是否提供代客泊車服務？
                     </button>
                 </h2>
-                <div id="faq3" class="accordion-collapse collapse" aria-labelledby="headingThree">
+                <div id="faq4" class="accordion-collapse collapse" aria-labelledby="headingThree">
                     <div class="accordion-body">
                         本餐廳對面有付費汽車停車場，或是可以將愛車停置淡水捷運站停車場。
                     </div>
@@ -93,13 +100,13 @@
             </div>
 
             <div class="accordion-item">
-                <h2 class="accordion-header" id="headingThree">
+                <h2 class="accordion-header" id="headingFive">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#faq3" data-bs-parent="#faqAccordion">
+                        data-bs-target="#faq5" data-bs-parent="#faqAccordion">
                         最近的捷運站或公車站在哪裡？是否方便步行抵達？
                     </button>
                 </h2>
-                <div id="faq3" class="accordion-collapse collapse" aria-labelledby="headingThree">
+                <div id="faq5" class="accordion-collapse collapse" aria-labelledby="headingThree">
                     <div class="accordion-body">
                         坐捷運至捷運淡水站，步行三分鐘即可抵達。
                     </div>
@@ -107,13 +114,13 @@
             </div>
 
             <div class="accordion-item">
-                <h2 class="accordion-header" id="headingThree">
+                <h2 class="accordion-header" id="headingSix">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#faq3" data-bs-parent="#faqAccordion">
+                        data-bs-target="#faq6" data-bs-parent="#faqAccordion">
                         餐廳是否允許攜帶寵物？有無寵物友善區域？
                     </button>
                 </h2>
-                <div id="faq3" class="accordion-collapse collapse" aria-labelledby="headingThree">
+                <div id="faq6" class="accordion-collapse collapse" aria-labelledby="headingThree">
                     <div class="accordion-body">
                         本餐廳禁止攜帶寵物。
                     </div>
@@ -121,13 +128,13 @@
             </div>
 
             <div class="accordion-item">
-                <h2 class="accordion-header" id="headingThree">
+                <h2 class="accordion-header" id="headingSeven">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#faq3" data-bs-parent="#faqAccordion">
+                        data-bs-target="#faq7" data-bs-parent="#faqAccordion">
                         單桌最多可容納幾人？是否能安排大型聚會或公司餐敘？
                     </button>
                 </h2>
-                <div id="faq3" class="accordion-collapse collapse" aria-labelledby="headingThree">
+                <div id="faq7" class="accordion-collapse collapse" aria-labelledby="headingThree">
                     <div class="accordion-body">
                         一桌都是四人桌，但也可以依人數併桌。
                     </div>
@@ -142,7 +149,7 @@
     </footer>
     <!-- Bootstrap JS CDN -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-
+    <script src="js/all_js.js"></script>
 </body>
 
 </html>

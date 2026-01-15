@@ -2,7 +2,7 @@
     padding:0;  
     margin:0;
 }
-/*首頁*/
+/*通用*/
 header{
     background-color: #B22222;
     /* border-bottom: 2px solid #E0C097; */
@@ -11,6 +11,7 @@ header{
     position: fixed;    /*將header固定在最上方*/
     z-index:9999;
 }
+
 h1{
     text-shadow: 10px 10px 4px #2B2B2B;
     color:#FFF8F0;
@@ -35,6 +36,7 @@ nav a{
     color:#FFF8F0;
     text-decoration: none;  /*文字裝飾設定為無*/
 }
+
 nav a:hover{     
     color: #FFD700;
 }
@@ -42,19 +44,25 @@ nav a:hover{
 span.dropdown-toggle{
     color: white;
 }
+
 .dropdown{
     position: relative;
 }
-/* 滑鼠移入 dropdown 時自動展開 */
-.dropdown:hover .dropdown-menu {
-    display: block;
-    margin-top: 0; /* 避免位置偏移 */
-  }
 
 .dropdown-menu li{
     margin: 0;
 }
 
+footer{
+    background-color: #8B0000;
+    color: #FFF8F0;
+    height: 10vh;
+    font-size: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 
 /* 限制整個 dropdown-menu 的寬度與內距 */
 .dropdown-menu {
@@ -67,12 +75,14 @@ span.dropdown-toggle{
 }
   
   /* 精簡每個選項的高度與間距 */
-  .dropdown-item {
+.dropdown-item {
     padding: 4px 10px;       /* 項目內距縮小 */
     margin: 10px;
     line-height: 1.2;
 }
-  
+
+
+/*首頁*/
 .word{
     color:white;
     border-bottom: 2px solid #E0C097;
@@ -84,17 +94,19 @@ span.dropdown-toggle{
     flex-direction: column; /*欄*/
     align-items: center;    /*交叉軸對齊*/
     justify-content: center;    /*主軸對齊*/
-    
 }
+
 .word h2{
     font-size: 60px;
     margin-top: 60px;
 }
+
 .word p{
     color: #FEF7E6;
     font-size: 18px;
     margin: 25px;
 }
+
 .slogan{
     background-color: #FFF8F0;
     border-bottom: 2px solid #E0C097;
@@ -120,20 +132,24 @@ span.dropdown-toggle{
     object-fit: cover;  /*讓圖片或影片填滿容器，必要時裁切多餘的部分，但不變形*/
     display: block;
 }
+
 .map1{
     width: 50%;
     display: flex;
     flex-direction: column;
 }
+
 .mapinf{
     border-bottom: 2px solid #E0C097;
     flex: 2;
 }
+
 .mapinf iframe{
     width: 100%;
     height: 100%;
     display: block;
 }
+
 .maptext{
     background-color: #FFE4B5;
     flex: 1;
@@ -142,45 +158,38 @@ span.dropdown-toggle{
     justify-content: center;
     align-items: center;
 }
+
 .maptext p{
     color:#3E2723;
     margin: 4px;
     font-size: 18px;
 }
 
-footer{
-    background-color: #8B0000;
-    color: #FFF8F0;
-    height: 10vh;
-    font-size: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
 
 /*關於我們*/
 body{
     background-image: linear-gradient(to bottom, #FFF8F0, #FFE4B5);
 }
+
 .main2{
-  display: flex;
-  height: 80vh;
+    display: flex;
+    height: 80vh;
 }
 
 .mainword1,
 .mainword2 {
-  flex: 1;
-  display: flex; /* 讓內部 .inner 可以垂直置中 */
-  justify-content: center;
-  box-sizing: border-box;
-  padding-top: 15vh;
-  line-height: 2.5;
+    flex: 1;
+    display: flex; /* 讓內部 .inner 可以垂直置中 */
+    justify-content: center;
+    box-sizing: border-box;
+    padding-top: 15vh;
+    line-height: 2.5;
 }
 
 .inner {
-  width: 80%;
+    width: 80%;
 }
+
 .mainword1 p,
 .mainword2 p{
     color: #B22222;
@@ -194,10 +203,12 @@ body{
     text-align: left;
     font-size: 18px;
 }
+
 .mainword1 li:hover,
 .mainword2 li:hover{
     font-size: 24px;
 }
+
 .video{
     display: flex;
     flex-direction: column;
@@ -207,9 +218,9 @@ body{
 }
 
 .inner ol li {
-  opacity: 0; 
-  transform: translateX(-20px);
-  animation: fadeSlideIn 0.8s forwards; /*套用名為fadeSlidenIn動畫，持續0.8秒，結束時保持最後狀態*/
+    opacity: 0; 
+    transform: translateX(-20px);
+    animation: fadeSlideIn 0.8s forwards; /*套用名為fadeSlidenIn動畫，持續0.8秒，結束時保持最後狀態*/
 }
 
 .inner ol li:nth-child(1) { animation-delay: 0.2s; }
@@ -237,80 +248,85 @@ body{
   }
 }
 
+
 /* 常見問題 */
 .proMain{
     padding-top: 120px;
     height: 90vh;
 }
 
+.accordion-body{
+    background-color: grey;
+}
 
-/* 店面資訊 */
+
+/* 門市據點 */
 .grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* 自動調整欄位數 */
-  gap: 30px; /* 適度間距 */
-  padding: 100px 20px; /* 上下左右留白 */
-  justify-items: center; /* 每個格子置中 */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* 自動調整欄位數 */
+    gap: 30px; /* 適度間距 */
+    padding: 100px 20px; /* 上下左右留白 */
+    justify-items: center; /* 每個格子置中 */
 }
 
 .cell {
-  display: flex;
-  flex-direction: column;
-  align-items: center;     /* 水平置中 */
-  justify-content: flex-start; /* 內容由上往下排 */
-  border: 2px solid #333;
-  border-radius: 8px;
-  overflow: hidden;
-  background-color: #f9f9f9;
-  text-align: center;
-  box-shadow: 2px 2px 6px rgba(0,0,0,0.2);
-  max-width: 300px; /* 卡片最大寬度 */
+    display: flex;
+    flex-direction: column;
+    align-items: center;     /* 水平置中 */
+    justify-content: flex-start; /* 內容由上往下排 */
+    border: 2px solid #333;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #f9f9f9;
+    text-align: center;
+    box-shadow: 2px 2px 6px rgba(0,0,0,0.2);
+    max-width: 300px; /* 卡片最大寬度 */
 }
 
 .cell img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  display: block;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
 }
 
 .cell p {
-  margin: 5px 0;
-  font-size: 16px;
+    margin: 5px 0;
+    font-size: 16px;
 }
 
 .cell p.subtitle {
-  color: #555;
-  font-size: 14px;
+    color: #555;
+    font-size: 14px;
 }
 
 .cell p.title {
-  color: #B22222; /* 店名用深紅色，呼應品牌 */
-  font-weight: bold;
-  font-size: 18px;
+    color: #B22222; /* 店名用深紅色，呼應品牌 */
+    font-weight: bold;
+    font-size: 18px;
 }
-
 
 
 
 /*以下為響應式設計*/
 @media (max-width: 768px) { /*當螢幕≤768px 時，套用以下CSS*/
 
-    /*header*/
- header {
-     height: auto;
+/*通用內容*/
+header {
+    height: auto;
     padding: 10px 0;
     position: relative;
 }
 
-body{
+body {
     display: flex;
     flex-direction: column;
 }
 
-main{
+main {
     flex:1;
 }
+
 h1 {
     position: static;
     text-align: center;
@@ -330,7 +346,14 @@ header li {
     margin: 10px 0;
 }
 
-    /*首圖*/
+footer {
+    height: auto;
+    padding: 10px;
+    text-align: center;
+}
+
+
+/*首頁*/
 .word h2 {
     font-size: 36px;
     text-align: center;
@@ -341,7 +364,7 @@ header li {
     text-align: center;
 }
 
-    /*地圖部分*/
+/*首頁地圖*/
 .map {
     flex-direction: column;   /* 橫排變直排 */
 }
@@ -354,6 +377,7 @@ header li {
 .map img {
     max-height: 300px;
 }
+
 .mapinf{
     flex:none;
     height: 380px;
@@ -364,27 +388,18 @@ header li {
     padding: 10px 0;
 }
 
-    /*footer*/
-footer {
-    height: auto;
-    padding: 10px;
-    text-align: center;
-}
-.about{
-    flex-direction: column;
-}
 
-/*aboutus*/
+/*關於我們*/
 body, .store_main {
-  overflow-x: hidden; /* 禁止水平捲動 */
+    overflow-x: hidden; /* 禁止水平捲動 */
 }
 
 .video iframe {
-  width: 100%;
-  max-width: 700px;
-  height: auto;
-  margin-top: 10vh;
-  aspect-ratio: 16/9; /* 保持比例 */
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    margin-top: 10vh;
+    aspect-ratio: 16/9; /* 保持比例 */
 }
 
 .main2{
@@ -392,11 +407,60 @@ body, .store_main {
     height: auto;
 }
 
+
 /*常見問題*/
 .proMain{
     height: auto;
     padding: 30px;
 }
 
+
+/* 漢堡選單按鈕 */
+.hamburger{
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  margin-top: -45px;
+  position: absolute;
+  left: 10px;
+}
+.hamburger span{
+    height: 2px;
+    width: 20px;
+    background-color: #2B2B2B;
+    margin: 4px 0;
+}
+.navbar{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.nav-links{
+    padding: 0;
+    margin: 0;
+    display: none;
+    flex-direction: column;
+    background-color: #eee;
+    width: 100%;
+    margin-top: 10px;
+    
+}
+.nav-links.active{
+    display: flex;
+}
+.nav-links a, 
+.nav-links span{
+    color: black;
+}
+.dropdown{
+    position: relative;
+}
+.dropdown-menu{
+    width: 50%;
+    text-align: center;
+    position: absolute;
+    top: 100%;
+    transform: translateX(50%);
 }
 
+}
